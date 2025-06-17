@@ -2,6 +2,4 @@ pandas
 sqlalchemy
 matplotlib
 streamlit
-nltk
-spacy
 psycopg2-binary
