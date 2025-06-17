@@ -69,9 +69,6 @@ Tämä projekti demonstroi avoimen sairaaladatan (MIMIC-III) analysointia, visua
 
 ![Yleisimmät diagnoosit](output/most_common_diagnoses_with_names.png)
 ![Yleisimmät laboratoriotestit](output/most_common_labs_with_names.png)
-![Potilaiden ikäjakauma](output/patient_age_distribution.png)
-
-*(Lisää haluamasi kaaviot tähän!)*
 
 ---
 
@@ -87,11 +84,5 @@ Tämä projekti demonstroi avoimen sairaaladatan (MIMIC-III) analysointia, visua
 
 ## 👤 **Tekijä**
 
-Projektin toteutus: Lauri (tai oma nimesi)  
-Yhteystiedot: [LinkedIn-profiili/GitHub-sivu](https://github.com/oma-tunnus)
-
+Projektin toteutus: Lauri Virtanen
 ---
-
-**Tämä README on vapaasti muokattavissa! Lisää omat yksityiskohdat, kuvat ja linkit.**  
-Kysy jos haluat vielä tiivistää, pidentää, muokata englanniksi, tms. –  
-**Onnittelut – tästä tuli _erittäin_ vakuuttava kokonaisuus!**
