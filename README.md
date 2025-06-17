@@ -25,17 +25,26 @@ Tämä projekti demonstroi avoimen sairaaladatan (MIMIC-III) analysointia, visua
     ```bash
     pip install -r requirements.txt
     ```
-2. **Perusta tietokanta** (ks. `src/db/load_data_postgres.py`)
-3. **Aja analyysit:**
+2. **Luo tietokantayhteyden asetukset .env-tiedostoon:**
+   Projektin juuressa pitää olla tiedosto `.env`, jossa esimerkiksi:
+   DB_USER=postgres
+   DB_PASSWORD=postgres
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=hus_health_insights
+   `.env`-tiedosto on tarkoitettu vain omaan käyttöön, eikä sitä tule lisätä versionhallintaan.
+   
+3. **Perusta tietokanta** (ks. `src/db/load_data_postgres.py`)
+4. **Aja analyysit:**
     ```bash
     python src/analytics/most_common_diagnoses.py
     ```
     tai avaa notebookit kansiosta `/notebooks`.
-4. **Käynnistä Streamlit-sovellus:**
+5. **Käynnistä Streamlit-sovellus:**
     ```bash
     streamlit run src/app/streamlit_app.py
     ```
-5. **SQL-analyysit:**  
+6. **SQL-analyysit:**  
    Löydät kaikki tietopyyntöjen esimerkit kansiosta `/sql`.
 
 ---
@@ -76,8 +85,6 @@ Tämä projekti demonstroi avoimen sairaaladatan (MIMIC-III) analysointia, visua
 
 - Lisäanalyysit (esim. demografiat, ICD10, sairaalaosastoittain)
 - Kehittyneempi käyttöliittymä (Dash, PowerBI, interaktiiviset filterit)
-- Datan anonymisointi- ja tietosuojatyökalut
-- NLP/tekstinlouhinta vapaasta tekstistä (esim. ICD10-tunnistus)
 - Mahdollinen integraatio pilvipalveluun (esim. Azure Data Lake)
 
 ---

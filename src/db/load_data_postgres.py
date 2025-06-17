@@ -1,12 +1,18 @@
+import os
+from dotenv import load_dotenv
 import pandas as pd
 from sqlalchemy import create_engine
 
+# Ladataan ympäristömuuttujat .env-tiedostosta
+load_dotenv()
+
+
 # Määritetään tietokannan yhteysparametrit
-DB_USER = 'postgres'
-DB_PASSWORD = 'postgres'
-DB_HOST = 'localhost'
-DB_PORT = '5432'
-DB_NAME = 'hus_health_insights'
+DB_USER = os.environ["DB_USER"]
+DB_PASSWORD = os.environ["DB_PASSWORD"]
+DB_HOST = os.environ["DB_HOST"]
+DB_PORT = os.environ["DB_PORT"]
+DB_NAME = os.environ["DB_NAME"]
 
 DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 
